@@ -3,48 +3,105 @@ Mikrotik Console
 /ip firewall filter add chain=forward dst-address-list=LIST_STATIC_IP_VPN_PROXY action=drop comment="DROP ALL LIST_STATIC_IP_VPN_PROXY"
 
 # Add Static IP To Address List LIST_STATIC_IP_VPN_PROXY
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.186.9
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.155
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.14.65.247
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.214.19
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.47
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=23.251.121.59
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.195.77
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.35
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=37.120.202.178
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=107.155.57.206
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.215.7
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.95
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.205.233
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.186.136
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.186.132
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.61.249
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.195.223.210
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.61.40
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.68.213.44
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.46.228
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.70.33
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.46.206
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=79.110.53.180
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=79.110.54.249
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=79.110.54.250
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.217
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.190.104
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.190.44
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.214.46
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.214.38
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.214.6
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=37.120.202.173
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=37.120.202.179
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=107.155.57.9
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.195.140
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.195.26
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.195.151
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.215.49
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.215.54
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=45.84.123.205
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.20.138
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.20.86
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.82.209
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=135.125.201.0
-/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=135.125.203.82
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.186.9 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.155 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.14.65.247 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.214.19 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.47 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=23.251.121.59 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.195.77 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.35 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=37.120.202.178 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=107.155.57.206 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.215.7 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.95 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.205.233 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.186.136 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.186.132 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.61.249 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.195.223.210 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.61.40 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.68.213.44 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.46.228 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.70.33 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.46.206 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=79.110.53.180 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=79.110.54.249 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=79.110.54.250 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.172.217 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.190.104 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.190.44 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.214.46 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.214.38 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.214.6 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=37.120.202.173 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=37.120.202.179 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=107.155.57.9 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.195.140 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.195.26 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=128.1.195.151 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.215.49 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=194.5.215.54 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=45.84.123.205 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.20.138 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.20.86 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=146.70.82.209 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=135.125.201.0 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=135.125.203.82 comment="Turbo VPN"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=84.16.229.244 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=185.153.180.101 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=209.141.46.181 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.145.38 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.145.193 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.249.98 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.173.183 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.144.148 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.223.209 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.14 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.198.176 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.157 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.234 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.232 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.240.150 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.161 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.241 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.160 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.233 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.230 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.239 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=139.99.61.159 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.158 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.242.111 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.16 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.142.225 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.240 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.145.10 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.15 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=15.235.199.13 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=51.79.243.202 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=209.141.51.83 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=45.88.171.51 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=45.61.188.135 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=209.141.44.53 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=198.98.59.38 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=185.153.180.106 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=38.143.66.104 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=167.88.61.121 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=139.64.165.123 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=142.202.49.104 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=209.141.37.117 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=31.13.213.67 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=171.22.137.132 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=167.88.62.49 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=162.251.60.107 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=84.16.224.247 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=84.16.224.245 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=46.165.203.90 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=46.165.203.84 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=46.165.203.115 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=46.165.254.136 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=84.16.229.243 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=89.44.194.86 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=89.43.107.154 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=87.121.55.207 comment="VPN - Fast, Scure & Unlimited"
+/ip firewall address-list add list=LIST_STATIC_IP_VPN_PROXY address=92.243.93.155 comment="VPN - Fast, Scure & Unlimited"
